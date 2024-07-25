@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    html{
+        @apply m-0 p-0 box-border
+    }
+    a{
+        @apply text-[#5a5a5a]
+    }
+    img{
+        @apply cursor-pointer
+    }
+    nav{
+        @apply flex items-center shadow-my-shadow py-[10px] px-[2%] justify-between bg-white sticky top-0 z-10
+    }
+    .container2{
+        @apply bg-white pl-[17%] pr-[2%] py-[20px] 
+    }
+    .large-container{
+        @apply pl-[7%]
+    }
+}
+@layer components{
+    .side-link {
+        @apply flex items-center mb-[20px] w-fit flex-wrap cursor-pointer
+    }
+    .small-sidebar{
+        @apply w-[5%] 
+    }
+    .small-sidebar p, .small-sidebar h3{
+        @apply hidden
+    }
+    .small-sidebar hr{
+        @apply w-[50%] mb-[25px]
+    }
+    .card img{
+        @apply w-full rounded-[5px]
+    }
+    .card h2{
+        @apply text-base font-semibold my-[5px]
+    }
+    .card h3{
+        @apply text-[14px] font-semibold text-[#555] my-[6px]
+    }
+    .card p{
+        @apply text-[14px]
+    }
+}
